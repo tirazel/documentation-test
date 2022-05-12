@@ -42,10 +42,12 @@ jobs:
 
           echo "::set-output name=commit::$(git rev-parse HEAD)"
 
-#      - name: Login with GH token
-#        env:
-#          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-#        run: gh auth login --with-token
+      - name: Login with GH token
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          /usr/bin/echo "${{ secrets.GH_TOKEN }}" > .ghtoken
+          gh auth login --with-token < .ghtoken
 
       - name: Push new branch
         env:
