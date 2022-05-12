@@ -55,11 +55,11 @@ jobs:
 #        run: git push origin release/${{ github.event.inputs.version }}
 
 
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GH_TOKEN }}
-        branch: release/${{ github.event.inputs.version }}
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          branch: release/${{ github.event.inputs.version }}
 
 
       - name: Create pull request
