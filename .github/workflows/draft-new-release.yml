@@ -49,17 +49,17 @@ jobs:
 #          /usr/bin/echo "${{ secrets.GH_TOKEN }}" > .ghtoken
 #          gh auth login --with-token < .ghtoken
 
-#      - name: Push new branch
-#        env:
-#          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-#        run: git push origin release/${{ github.event.inputs.version }}
+      - name: Push new branch
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: git push origin release/${{ github.event.inputs.version }}
 
 
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          branch: release/${{ github.event.inputs.version }}
+#      - name: Push changes
+#        uses: ad-m/github-push-action@master
+#        with:
+#          github_token: ${{ secrets.GH_TOKEN }}
+#          branch: release/${{ github.event.inputs.version }}
 
 
       - name: Create pull request
