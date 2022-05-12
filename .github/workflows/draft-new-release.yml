@@ -42,6 +42,11 @@ jobs:
 
           echo "::set-output name=commit::$(git rev-parse HEAD)"
 
+      - name: Login with GH token
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: gh auth login ${{ secrets.GH_TOKEN }}
+
       - name: Push new branch
         run: git push origin release/${{ github.event.inputs.version }}
 
