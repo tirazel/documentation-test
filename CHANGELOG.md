@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [v0.5] - 2022-07-06
+
 Sample release note
 
 ## [v0.3] - 2022-07-06
@@ -18,7 +21,9 @@ Sample release note
 
 ## [v0.1.10] - 2022-05-12
 
-[Unreleased]: https://github.com/tirazel/documentation-test/compare/v0.3...HEAD
+[Unreleased]: https://github.com/tirazel/documentation-test/compare/v0.5...HEAD
+
+[v0.5]: https://github.com/tirazel/documentation-test/compare/v0.3...v0.5
 
 [v0.3]: https://github.com/tirazel/documentation-test/compare/v0.2.2...v0.3
 
