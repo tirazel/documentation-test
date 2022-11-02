@@ -17,7 +17,7 @@ jobs:
 
       - name: Update version.txt
         run: |
-          echo ${{ github.event.pull_request.title }} >> version.txt
+          sed -i '/## \[Unreleased\]/a \\ \n${{ github.event.pull_request.title }}' CHANGELOG.md
       - name: Amend the last commit
         run: |
           git config --global user.email "noreply@github.com"
