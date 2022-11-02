@@ -11,7 +11,9 @@ jobs:
   release:
     name: Publish a release
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged == true && && github.head_ref.startsWith('release')
+    if: |
+      github.event.pull_request.merged == true && 
+      startsWith(github.head_ref, 'release')
     steps:
       - name: Extract version from branch name (for release branches)
         if: startsWith(github.event.pull_request.head.ref, 'release/')
