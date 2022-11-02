@@ -4,12 +4,10 @@ on:
     branches:
       - main
     types: closed
-    tags-ignore:
-      - v*
 
 jobs:
-  update_date:
-    if: github.event.pull_request.merged == true
+  update_changelog:
+    if: github.event.pull_request.merged == true && !github.head_ref.startsWith('release')
     runs-on: ubuntu-latest
     steps:
       - name: checkout
