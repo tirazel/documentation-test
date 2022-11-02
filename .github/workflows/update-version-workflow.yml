@@ -17,7 +17,7 @@ jobs:
 
       - name: Update version.txt
         run: |
-          echo ${{ github.event_name }} >> version.txt
+          echo ${{ github.event.pull_request.title }} >> version.txt
       - name: Amend the last commit
         run: |
           git config --global user.email "noreply@github.com"
