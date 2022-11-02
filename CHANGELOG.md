@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v0.8] - 2022-11-02
+
 ## [v0.7] - 2022-07-06
 
 New PR Test!
@@ -29,7 +31,9 @@ Sample release note
 
 ## [v0.1.10] - 2022-05-12
 
-[Unreleased]: https://github.com/tirazel/documentation-test/compare/v0.7...HEAD
+[Unreleased]: https://github.com/tirazel/documentation-test/compare/v0.8...HEAD
+
+[v0.8]: https://github.com/tirazel/documentation-test/compare/v0.7...v0.8
 
 [v0.7]: https://github.com/tirazel/documentation-test/compare/v0.6...v0.7
 
