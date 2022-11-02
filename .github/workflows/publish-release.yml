@@ -6,14 +6,12 @@ on:
       - main
     types:
       - closed
-    tags:
-      - v*
 
 jobs:
   release:
-    name: Publish new release
+    name: Publish a release
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged == true # only merged pull requests must trigger this job
+    if: github.event.pull_request.merged == true && && github.head_ref.startsWith('release')
     steps:
       - name: Extract version from branch name (for release branches)
         if: startsWith(github.event.pull_request.head.ref, 'release/')
