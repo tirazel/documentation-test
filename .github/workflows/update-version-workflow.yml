@@ -11,14 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
-          # Fetch full depth, otherwise the last step overwrites the last commit's parent, essentially removing the graph.
           fetch-depth: 0
 
       - name: Update version.txt
         run: |
-          date >> version.txt
+          echo ${{ github.event_name }} >> version.txt
       - name: Amend the last commit
         run: |
           git config --global user.email "noreply@github.com"
