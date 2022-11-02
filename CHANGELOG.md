@@ -7,10 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
  
+Release version v1.1
+
+## [v1.1] - 2022-11-02
+
 PR9 Title
- 
+
 Pull Request 8
- 
+
 Release version v0.10
 
 ## [v0.10] - 2022-11-02
@@ -49,7 +53,9 @@ Sample release note
 
 ## [v0.1.10] - 2022-05-12
 
-[Unreleased]: https://github.com/tirazel/documentation-test/compare/v0.10...HEAD
+[Unreleased]: https://github.com/tirazel/documentation-test/compare/v1.1...HEAD
+
+[v1.1]: https://github.com/tirazel/documentation-test/compare/v0.10...v1.1
 
 [v0.10]: https://github.com/tirazel/documentation-test/compare/v0.9...v0.10
 
